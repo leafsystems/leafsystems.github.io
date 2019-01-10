@@ -9,6 +9,9 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans:400,700');
+
+
 
 :root {
   /* --main-bg-color: #535a63; */
@@ -38,7 +41,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Ropa Sans", sans-serif;
   color: #afbac4;
 }
 
@@ -948,6 +951,35 @@ a:hover {
   font-size: 20px;
   margin: 0;
 }
+
+/*=================================================================
+  Item counter section
+==================================================================*/
+.awards-item {
+  padding: 25px 0;
+  margin-bottom: 10px;
+  background: #292F36;
+}
+
+.awards-item i {
+  margin-bottom: 10px;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.awards-item span {
+  display: block;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.awards-item h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+
 
 /*=================================================================
   Pricing section

@@ -145,12 +145,15 @@ jQuery(function ($) {
 				'value': 'Sending...'
 			});
 
+
+			//https://docs.google.com/forms/d/e/1FAIpQLScW7GtK71xFBNansNr3tGNgW6sXtMI5cJAhVdk0fJaLKy1CjA/viewform?usp=pp_url&entry.1935986684=NAMEHERE&entry.236416474=EMAILHERE&entry.1777323565=SUBJECTHERE&entry.1544499135=MESSAGEHERE
+
 			/* using the jquery's post(ajax) function and a lifesaver
 			function serialize() which gets all the data from the form
 			we submit it to send_email.php */
-			$.post("sendmail.php", $("#contact-form").serialize(), function (result) {
+			$.post("https://formspree.io/contact@leaf-systems.app", $("#contact-form").serialize(), function (result) {
 				//and after the ajax request ends we check the text returned
-				if (result == 'sent') {
+				if (result == 'sent' || True) {
 					//if the mail is sent remove the submit paragraph
 					$('#cf-submit').remove();
 					//and show the mail success div with fadeIn
